@@ -1,0 +1,6 @@
+:topics: Berlin, Vacation, Soccer
+==== Groundhopping in Berlin
+
+Lorem ipsum
+
+Themen: {topics}

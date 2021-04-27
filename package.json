@@ -10,7 +10,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:ideastream.helloWorld"
+		"onCommand:ideastream.helloWorld",
+		"onStartupFinished"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -19,7 +20,24 @@
 				"command": "ideastream.helloWorld",
 				"title": "Hello World"
 			}
-		]
+		],
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "note-meta",
+					"title": "Notes",
+					"icon": "resources/topics.svg"
+				}
+			]
+		},
+		"views": {
+			"note-meta": [
+				{
+					"id": "note-topics",
+					"name": "Note Topics"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
